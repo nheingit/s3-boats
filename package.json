@@ -1,0 +1,30 @@
+{
+  "name": "boats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "listBucket": "babel-node s3_listbuckets.js",
+    "createBucket": "babel-node s3_createBucket.js",
+    "bucketUpload": "babel-node s3_upload.js",
+    "listObjects": "babel-node s3_listObjects.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.860.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "^7.13.10"
+  }
+}
